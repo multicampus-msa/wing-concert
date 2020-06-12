@@ -20,7 +20,7 @@ public class ConcertController {
 
     private ConcertService concertService;
 
-    @ApiOperation(value = "콘서트 전체 검색")
+    @ApiOperation(value = "콘서트 검색")
     @GetMapping(value = "/api/concert")
     private List<ConcertResponseDto> getAllConcertById() {
         return concertService.findAll();
